@@ -92,10 +92,15 @@ export const util = (() => {
         setInterval(() => {
             const distance = Math.abs(count - (new Date()).getTime());
 
-            document.getElementById('day').innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
-            document.getElementById('hour').innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            document.getElementById('minute').innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            document.getElementById('second').innerText = Math.floor((distance % (1000 * 60)) / 1000);
+            // document.getElementById('day').innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+            // document.getElementById('hour').innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            // document.getElementById('minute').innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            // document.getElementById('second').innerText = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('day').innerText = 0;
+            document.getElementById('hour').innerText = 0;
+            document.getElementById('minute').innerText = 0;
+            document.getElementById('second').innerText = 0;
         }, 1000);
     };
 
